@@ -204,7 +204,7 @@ SaveManager:SetFolder("ParentFolder/SpecificFolder")
 local Settings = Window:AddTab({ Title = "Settings", Icon = "settings" })
 SaveManager:BuildConfigSection(Settings) -- Assigns a tab where users can edit settings manually
 
-SaveManager:LoadAutoConfig() -- Loads the saved configuration (SaveManager:SetFolder required), recommended to do at the end of your code
+SaveManager:LoadAutoloadConfig() -- Loads the saved configuration (SaveManager:SetFolder required), recommended to do at the end of your code
 ```
 
 - ### Interface Manager
@@ -219,7 +219,7 @@ InterfaceManager:BuildInterfaceSection(Settings)
 
 ## Misc
 ### Auto Selecting Tab
-This should be at the end of your code, first tab is recommended.
+This should be close to the end of your code, first tab is recommended.
 ```lua
 Window:SelectTab(1) -- Selects the first tab
 ```
