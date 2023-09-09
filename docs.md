@@ -151,7 +151,7 @@ local Colorpicker = Main:AddColorpicker("ColorpickerIdentifier", {
 })
 
 Colorpicker:OnChanged(function()
-    print("Color:", Colorpicker.Value -- ?: RBG value, "Optional Transparency:", Colorpicker.Transparency -- ?: number)
+    print("Color:", Colorpicker.Value) -- ?: RBG value, "Optional Transparency:", Colorpicker.Transparency -- ?: number)
 end)
 ```
 
