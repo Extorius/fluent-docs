@@ -93,7 +93,7 @@ Main:AddButton({
 
 - ### Toggle
 ```lua
-local Toggle = Main:AddToggle("ToggleIndentifier", {
+local Toggle = Main:AddToggle("ToggleIdentifier", {
     Title = "Toggle Name",
     Default = false
 })
@@ -214,7 +214,7 @@ InterfaceManager:SetLibrary(Fluent)
 InterfaceManager:SetFolder("ParentFolder")
 
 local Settings = Window:AddTab({ Title = "Settings", Icon = "settings" })
-InterfaceManager:BuildConfigSection(Settings)
+InterfaceManager:BuildInterfaceSection(Settings)
 ```
 
 ## Misc
